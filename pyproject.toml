@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egfr-batch"
+version = "0.1.0"
+description = "Batch-compute CKD-EPI 2021 eGFR (creatinine and creatinine-cystatin C) from a CSV -- with explicitly declared units, or not at all."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "RakTikoo" },
+]
+keywords = ["egfr", "ckd-epi", "creatinine", "cystatin-c", "nephrology", "csv"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = []
+
+[project.scripts]
+egfr-batch = "egfr_batch.cli:main"
+egfr = "egfr_batch.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/RakTikoo/egfr-batch"
+
+[tool.setuptools]
+packages = ["egfr_batch"]
