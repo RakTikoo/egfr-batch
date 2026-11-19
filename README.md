@@ -230,6 +230,15 @@ Cockcroft-Gault without a declared weight choice) — all of which must
 fail with clean one-line errors, never tracebacks, and never write a
 partial output file.
 
+## Use with an AI agent
+
+This repo ships a [SKILL.md](SKILL.md) written to the Agent Skills open
+standard. If your coding agent supports skills, point it at this repo and
+it can install egfr-batch, run it on your CSVs, and read the results for
+you. The skill works as documented when the repo is cloned under its
+real name (`egfr-batch`) — the standard matches a skill to its folder
+name.
+
 ## License
 
 MIT. Free and open source, for science.
