@@ -25,8 +25,7 @@ pip install git+https://github.com/RakTikoo/egfr-batch
 ```
 
 This provides the `egfr-batch` command. Verify an install with
-`egfr-batch check`, which recomputes a published worked example and
-prints PASS when it matches.
+`egfr-batch check` (recomputes a published worked example; prints PASS).
 
 ## Run
 
@@ -38,8 +37,7 @@ egfr-batch single --age 60 --sex F --scr 106 --scr-unit umol/L --scys 1.2 --scys
 - Input columns are `age`, `sex` (`F`/`M`), `creatinine`, plus optional
   `cystatin_c`, `height_cm`, `weight_kg`.
 - `--scr-unit` is required: `mg/dL` or `umol/L`. µmol/L values are
-  converted with the NIDDK factor (÷ 88.4) and the value used is written
-  to every row as `scr_used_mg_dl`.
+  converted with the NIDDK factor (÷ 88.4); the value used is written to every row as `scr_used_mg_dl`.
 - If any row has cystatin C, `--scys-unit mg/L` is required.
 - `--cockcroft-gault` requires an explicit `--cg-weight` of `actual`,
   `ideal` or `adjusted`; the weight used is recorded per row.
@@ -68,13 +66,11 @@ output to misread.
   tool does published-formula arithmetic only — it does not diagnose,
   stage, or interpret anything. Verify any result before clinical use.
 - Arithmetic only, by design: no CKD staging, no diagnosis, no
-  reference-range flagging, no interpretation of any kind. What a number
-  means for a person is a clinical judgement this software does not make.
+  reference-range flagging, no interpretation. What a number means for a person is a clinical judgement this software does not make.
 - Adults only: ages under 18 are refused. The CKD-EPI 2021 equations are
   adult equations; there is no paediatric equation in this tool.
 - Assay assumptions are yours: the equations assume standardised
-  (IDMS-traceable) creatinine and reference-standardised cystatin C, and
-  the tool cannot tell whether laboratory values meet that.
+  (IDMS-traceable) creatinine and reference-standardised cystatin C; the tool cannot tell whether laboratory values meet that.
 - eGFR is an estimate, not a measurement; known non-GFR determinants of
   creatinine and cystatin C (muscle mass, diet, some medicines, illness)
   affect the inputs and therefore the outputs.
