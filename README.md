@@ -1,5 +1,7 @@
 # egfr-batch — batch-compute CKD-EPI 2021 eGFR from a CSV
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/RakTikoo/egfr-batch)
+
 > **Research and educational tool only. Not a medical device. This tool
 > does published-formula arithmetic only — it does not diagnose, stage,
 > or interpret anything. Verify any result before clinical use.**
@@ -125,6 +127,8 @@ With Scoop (Windows):
 scoop bucket add RakTikoo https://github.com/RakTikoo/scoop-bucket
 scoop install egfr-batch
 ```
+
+**For agent users:** this repository ships a `SKILL.md` for AI agents. Install it with `npx skills add RakTikoo/egfr-batch`.
 
 ## Usage
 
