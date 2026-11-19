@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - name: RakTikoo
+title: "egfr-batch: batch-compute CKD-EPI 2021 eGFR from a CSV, with explicitly declared units"
+version: 0.1.0
+date-released: 2026-11-17
+license: MIT
+url: "https://github.com/RakTikoo/egfr-batch"
+repository-code: "https://github.com/RakTikoo/egfr-batch"
+abstract: >-
+  Batch-computes eGFR with the published CKD-EPI 2021 equations
+  (creatinine and creatinine-cystatin C) from a CSV of age, sex and
+  creatinine, with the creatinine unit declared explicitly; optionally
+  adds Cockcroft-Gault creatinine clearance and de-indexed eGFR.
+  Research and educational tool only. Not a medical device: published-
+  formula arithmetic only, no diagnosis, staging or interpretation.
+keywords:
+  - eGFR
+  - CKD-EPI 2021
+  - creatinine
+  - clinical research

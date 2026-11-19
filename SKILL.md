@@ -1,6 +1,6 @@
 ---
 name: egfr-batch
-description: Batch-compute eGFR with the published CKD-EPI 2021 equations from a CSV of age, sex and creatinine, with the creatinine unit (mg/dL or umol/L) declared explicitly — the tool refuses to guess it. Optionally adds eGFRcr-cys from cystatin C, Cockcroft-Gault creatinine clearance and de-indexed eGFR. Use when asked to calculate eGFR for a cohort or CSV file, run a single CKD-EPI 2021 calculation, or convert creatinine units for eGFR.
+description: Batch-compute eGFR with the published CKD-EPI 2021 equations from a CSV of age, sex and creatinine, with the creatinine unit (mg/dL or umol/L) declared explicitly — the tool refuses to guess it. Optionally adds cystatin-C eGFR, Cockcroft-Gault and de-indexed values. Use when asked to calculate eGFR for a cohort or CSV file, run one CKD-EPI calculation, or convert creatinine units for eGFR. Not for general lab-unit conversion (use labunits), child growth z-scores (use growthz), de-identification checks (use safeharbor-check), or randomisation lists (use blockrandom). Research/educational only; not a medical device.
 license: MIT
 compatibility: Requires Python 3.10+, standard library only, no dependencies. Installing needs network access to GitHub; the tool itself runs fully offline and files never leave the machine.
 ---

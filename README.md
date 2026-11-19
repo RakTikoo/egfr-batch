@@ -1,4 +1,4 @@
-# egfr-batch
+# egfr-batch — batch-compute CKD-EPI 2021 eGFR from a CSV
 
 > **Research and educational tool only. Not a medical device. This tool
 > does published-formula arithmetic only — it does not diagnose, stage,
@@ -23,6 +23,10 @@ If you do not state `--scr-unit`, `egfr-batch` refuses and tells you
 why. That refusal is the product: mg/dL and µmol/L readings of the same
 blood sample differ by a factor of 88.4, and guessing wrong does not
 crash — it silently returns a wrong number for every row.
+
+**Quick install:** `pip install git+https://github.com/RakTikoo/egfr-batch`
+(Python 3.10+, no dependencies, runs offline). Details under
+[Install](#install).
 
 ## Demo
 
